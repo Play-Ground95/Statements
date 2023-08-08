@@ -1,13 +1,34 @@
+// class: ❌
 public class Demo3 {
+
+    //method: ❌
     public static void main(String[] args) {
-        myLable: //Lable statement
+        
+        empty:
+        ;
+        
+        myLabel:    // Label Statement
         {
-            int x =10;
-            secondLable: //second lable statement
+            // myVar: ❌
+            int x = 10;
+
+            anotherLabel:
+            x = 20;
+
+            secondLabel:    // Second Label Statement
             System.out.println("Hello");
         }
 
-        thirdLableStatement: //third lable statement
+        thirdLabelStatement:    // Third Label Statement
         System.out.println("IJSE");
+
+        abc:
+        if (true) System.out.println("IJSE");
+
+        // test:
+        int x;
+
+        test2:
+        x = 20;
     }
 }
