@@ -26,6 +26,10 @@ public class Demo8 {
          */
         System.out.print("Enter your name");
         String name=scanner.nextLine();
+           /*  Bad Practice 
+            if (name.length() > 0) 
+            System.out.printf("Name: %s \n", name);
+        */
         if(name.length()>0) System.out.printf("Name : %s \n",name);
         else System.out.println("INVALID NAME GO HELL");
     }
