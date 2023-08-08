@@ -48,8 +48,8 @@ public class Demo9 {
                 break;
             default :
                 System.out.println("Invalid......."); //that is for best practice only
-                
-            
+
         }
+        System.out.println("Just after switch statement");
     }
 }
