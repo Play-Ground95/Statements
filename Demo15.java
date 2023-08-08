@@ -1,49 +1,49 @@
 public class Demo15 {
     public static void main(String[] args) {
+        
         /*
-         * + + + + +
-         * + + + +
-         * + + +
-         * + +
-         * +
+            + + + + +
+            + + + +
+            + + +
+            + +
+            +
          */
 
-        //  int x=0;
-        //  int y=0;
-        
-        //  while(y++ <=4){
-        //         while(x++<=5){
-        //             System.out.print("+ ");
-        //             }
+        //  int k = 0;
+        //  int m = 5;
+        //  while (k++ < m){
+        //     System.out.print("+ ");
+        //     if (k == m) {
+        //         m--;
+        //         k = 0;
         //         System.out.println();
-        //  System.out.print("+ ");
-         
+        //     }
+        //  }
+
+         int k = 0;
+         int m = 5;
+         int a = m;
+         while (k++ < 15){
+            System.out.print("+ ");
+             if (k == m){
+                m = k + --a;
+                System.out.println();
+             }
+         }
+
+        // int y = 0;
+        // int z = 5;
+
+        // while (y++ < 5){
+
+        //     int x = 0;
+        //     while (x++ < z){
+        //         System.out.print("+ ");
+        //     }
+        //     System.out.println();
+        //     z--;
+
         // }
-        int count = 5;
-        while (count > 0) {
-            for (int i = 0; i < count; i++) {
-                System.out.print("+");
-            }
-            System.out.println();
-            count--;
-        }
 
-        int count1 = 5;
-        while (count > 0) {
-            int i = 0;
-            while (i < count1) {
-                System.out.print("+");
-                i++;
-            }
-            System.out.println();
-            count1--;
-
-            
-        }
-        
-        
     }
-
-    
-        
-    }
+}
