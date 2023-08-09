@@ -25,8 +25,8 @@ public class Demo21 {
             count++;
             System.out.print("\b".repeat(num));
             
-            System.out.printf("%s%s%s %s%%s\b", "\033[42m", spaces, "\033[0m", num );
-            Thread.sleep(1000);
+            System.out.printf("%s%s%s %s%%s\b", "\033[42m", spaces, "\033[0m", count);
+            Thread.sleep(100);
 
         } while (count++ < num);
 
