@@ -1,62 +1,58 @@
-import java.util.Scanner;
-
-public class Test {
-    private static final Scanner scanner = new Scanner(System.in);
-
+public class Test{
     public static void main(String[] args) throws Exception {
+        
+        System.out.printf("|%S| \n","TRAFFIC LIGHT SYSTEM");
+        String spaces = "";
+        int i = 0;
+        int green=50;
 
-        final String COLOR_GREEN = "\033[42m";
-        final String RESET = "\033[0m";
-        int num = 0;
-        int speed = 0;
-
-        do{
-        System.out.print("Enter a number between (0 to 100):");
-        num = scanner.nextInt();
-        scanner.nextLine();
-
-            if (num < 0 || num > 100){
-                System.out.println("Invalid number, try again!");
-            }
-        }while(num < 0 || num > 100);
-
-        do{
-        System.out.println("Select speed");
-        System.out.println("(1) Fast");
-        System.out.println("(2) Medium");
-        System.out.println("(3) Slow");
-        System.out.print("Enter your option: ");
-        speed = scanner.nextInt();
-        scanner.nextLine();
-
-            if (!(speed == 1 || speed == 2 || speed == 3)){
-                System.out.println("Invalid speed, try again");
-                speed = 0;
-            }
-        }while(speed == 0);
-
-        speed *= 200;
-
-        int x = 0;
-        String precentage = "10.00%";
         do {
-            System.out.print("\b".repeat(23 + precentage.length()));
-            System.out.print("[");
-            System.out.printf("%s%s%s%s",
-                COLOR_GREEN," ".repeat(x), RESET,
-              " ".repeat(20-x));
-            System.out.print("] ");
-            precentage = String.format("%.2f%%", x / 20.0 * 100);
+            spaces += " ";
+            i++;
+            
+            System.out.print("\b".repeat(green));
+            
+            System.out.printf("%s%s%s \b", "\033[42m", spaces, "\033[0m", i);
+            
+            Thread.sleep(50);
 
-            if (x / 20.0 * 100 >= num){
-                precentage = String.format("%.2f%%", num * 1.0);
-                System.out.println(precentage);
-                break;
-            }
+        } while (i++ < green);
 
-            System.out.print(precentage);
-            Thread.sleep(speed);
-        } while (x++ < 20);
+        String space2="";
+        int j=51;
+        int yellow=101;
+        
+        do{
+            space2 += " ";
+            j++;
+            
+            System.out.print("\b".repeat(yellow));
+            
+            System.out.printf("%s%s%s \b", "\033[43m", space2, "\033[0m", j);
+            
+            Thread.sleep(50);
+
+        } while (j++ < yellow);
+
+
+        String space3="";
+        int k=100;
+        int red=150;
+        
+        do{
+            space3 += " ";
+            k++;
+            
+            System.out.print("\b".repeat(red));
+            
+            System.out.printf("%s%s%s \b", "\033[41m", space3, "\033[0m", k);
+            
+            Thread.sleep(50);
+
+        } while (k++ < red);
         System.out.println();
+
+        
+
     }
 }

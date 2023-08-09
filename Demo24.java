@@ -15,7 +15,7 @@ public class Demo24 {
                  System.out.print("[");
                  //System.out.printf("%s"," ");
                  System.out.print("]");
-                 Thread.sleep(500);
+                 Thread.sleep(100);
                  System.out.print("\b".repeat(5));
                  if((i+1)==chars.length())i=-1;
                     
