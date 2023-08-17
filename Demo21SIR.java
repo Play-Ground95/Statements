@@ -7,7 +7,7 @@ public class Demo21SIR {
 
         final String COLOR_GREEN = "\033[42m";
         final String RESET = "\033[0m";
-        int num = 0;
+        int num = 20;
         int speed = 0;
 
         do{
